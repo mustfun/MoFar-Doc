@@ -1,4 +1,5 @@
-End-User License Agreement (EULA) of MoFar
+### End-User License Agreement (EULA) of MoFar
+
 This End-User License Agreement ("EULA") is a legal agreement between you and mustfun. Our EULA was created by EULA Template for MoFar.
 
 This EULA agreement governs your acquisition and use of our MoFar software ("Software") directly from mustfun or indirectly through a mustfun authorized reseller or distributor (a "Reseller").
