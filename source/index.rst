@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MoFar 1.0.36
+MoFar 1.0.55
 =================================
 
 .. toctree::
@@ -12,6 +12,7 @@ MoFar 1.0.36
    :glob:
 
    intro/*
+  
 
 .. toctree::
    :maxdepth: 3
@@ -19,6 +20,21 @@ MoFar 1.0.36
    :glob:
 
    use/*   
+
+.. toctree::
+   :maxdepth: 3
+   :caption: 进阶技巧:
+   :glob:
+
+   advance/*
+
+.. toctree::
+   :maxdepth: 3
+   :caption: 更新计划:
+   :glob:
+
+   plan/*
+    
 
 .. toctree::
    :maxdepth: 3

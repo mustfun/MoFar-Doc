@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'MoFar'
-copyright = '2022, itar.deng'
+copyright = '2023, itar.deng'
 author = 'itar.deng'
-release = '1.0.36'
+release = '1.0.55'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

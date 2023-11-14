@@ -11,7 +11,7 @@ MoFar是一款IDEA插件，插件的形式嵌入在IDE里面，不用切换界�
 
 
 
-![MoFar简介](../_static/image/intro_first.gif)
+![MoFar简介](../_static/image/intro_first_new.gif)
 
 
 
@@ -27,19 +27,19 @@ MoFar是一款IDEA插件，插件的形式嵌入在IDE里面，不用切换界�
 
 在我们开发的时候，经常需要调试代码，或者测试提了某bug ， 如果走全流程非常麻烦，如果更快的定位某个问题呢，能否只测试抛出异常的一段代码呢
 
-如下图，业务代码 ``addOneCity`` 发生异常了，前面还有很复杂的业务逻辑，但是异常抛在了`doCheck`方法，如何快速定位呢，只需要对`doCheck`方法进行右键，选中`start test`即可调试`doCheck`方法了
+如下图，业务代码 ``addOneCity`` 发生异常了，前面还有很复杂的业务逻辑，但是异常抛在了`doCheck`方法，如何快速定位呢，只需要对`doCheck`方法进行右键，选中`start invoke`即可调试`doCheck`方法了
 
-![image-20221216124721478](../_static/image/image-20221216124721478.png)
+![image-20231107202407486](../_static/image/image-20231107202407486.png)
 
-注：`doCheck`方法所需要的参数，只需要填一次即可，下次会自动填充
+注：`doCheck`方法所需要的参数，只需要填一次即可，下次会自动填充， 系统会记录你的参数
 
 
 
 ## 2.2 实时生效
 
-本功能依赖于IDEA 热部署功能，当修改完代码之后，IDEA菜单栏`  Build ->Recompile CityService.java`  或者快捷键 `ctrl+shift+F9`（Windows）即可热部署完成，点击调用，实时生效，发现代码已经可以返回true了
+本功能依赖于IDEA 热部署功能，当修改完代码之后，IDEA菜单栏`  Build ->Recompile CityService.java`  或者快捷键 `ctrl+shift+F9`（Windows）即可热部署完成，可以看到在不重启应用的情况下，点击调用，实时生效，发现代码已经可以返回true了
 
-![image-20221216133000246](../_static/image/image-20221216133000246.png)
+![image-20231107202556651](../_static/image/image-20231107202556651.png)
 
 
 
@@ -47,7 +47,7 @@ MoFar是一款IDEA插件，插件的形式嵌入在IDE里面，不用切换界�
 
 调用历史，针对已经发起过的调用，可以直接从历史发起，方便快捷
 
-![image-20221216134426012](../_static/image/image-20221216134426012.png)
+![history_intro](../_static/image/history_intro.gif)
 
 
 
@@ -55,42 +55,4 @@ MoFar是一款IDEA插件，插件的形式嵌入在IDE里面，不用切换界�
 
 针对比较重要的接口，每天都在见到的接口，可直接加入到收藏夹里面即可
 
-
-
-
-
-
-
-
-
-# 3. 更新计划 
-
-## 3.1 自动嗅探
-
-针对一些参数少的接口，如只需要`id`或者`uid`和少数参数我们可以手动填写参数，针对一些比较大的对象，需要填的参数还是有点多，为了避免这种问题，后期打算加入参数自动嗅探功能。集成BTrace模块，记录调用链路，还原参数
-
-计划更新版本： v1.0.60
-
-
-
-## 3.2 Http协议支持
-
-虽然插件支持controller层代码直接调用，但是在cookie处理上依然不太友好，不支持定制化参数，后续计划：
-
-- 支持定制化参数
-- 依然提供http协议访问，自由设置cookie信息
-
-计划更新版本： v1.0.40
-
-
-
-## 3.3 RPC协议支持
-
-- dubbo
-  - 支持dubbo调用
-- grpc
-  - 支持grpc协议
-
-
-
-计划更新版本： v1.0.50
+- 优先级不高，暂未开发
